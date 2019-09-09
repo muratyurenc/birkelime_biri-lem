@@ -1,0 +1,9 @@
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\bin\Debug\birkelime bir işlem.exe
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\bin\Debug\birkelime bir işlem.pdb
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime bir işlem.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime_bir_işlem.Form1.resources
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime_bir_işlem.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime bir işlem.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime bir işlem.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime bir işlem.exe
+C:\Users\Lenovo\source\repos\birkelime bir işlem\birkelime bir işlem\obj\Debug\birkelime bir işlem.pdb
