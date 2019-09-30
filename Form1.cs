@@ -24,7 +24,7 @@ namespace birkelime_bir_işlem
             hrf++;
             string harf1, harf2, harf3, harf4, harf5, harf6, harf7;
             int harf;
-            string[] dizi1 = { "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ş", "İ", "Z", "C", "V", "B", "N", "M", "Ö", "Ç", "E", "R", "T", "Y", "U", "I", "P", "Ğ", "Ü" };
+            string[] dizi1 = { "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ş", "İ", "Z", "C", "V", "B", "N", "M", "Ö", "Ç", "E", "R", "T", "Y", "U", "I","O", "P", "Ğ", "Ü" };
             if(hrf==1)
             {
                 harf = rst.Next(0, dizi1.Length);
@@ -74,6 +74,11 @@ namespace birkelime_bir_işlem
                 button7.Text = harf7.ToString();
                 button7.Visible = true;
             }
+            if(hrf>8)
+            {
+                hrf = 0;
+                HARFGETİR.Enabled = true;
+            }
 
         }
 
@@ -83,7 +88,7 @@ namespace birkelime_bir_işlem
             string say1, say2, say3, say4, say5, say6, say7;
             int deger;
             string [] dizi2 = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-            string[] dizi3 = { "15", "25", "35" };
+            string[] dizi3 = { "15", "25", "35","10", };
             if (ıslm==1)
             {
                 deger = rst.Next(0, dizi2.Length);
@@ -131,7 +136,13 @@ namespace birkelime_bir_işlem
                 deger = rst.Next(100,1000);
                 say7 = deger.ToString();
                 button14.Text = say7.ToString();
-                button12.Visible = true;
+                button14.Visible = true;
+            }
+            if (ıslm>8)
+            {
+                ıslm = 0;
+                eşıtlık.Enabled = true;
+                eşıtlık.Visible = true;
             }
         }
 
@@ -153,7 +164,61 @@ namespace birkelime_bir_işlem
             button13.Visible = false;
             button14.Visible = false;
             button15.Visible = false;
-            button16.Visible = false;
+            eşıtlık.Visible = false;
+           
+  
+        }
+        int kulharf = 10;
+        private void Kelımesonucları_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < textBox1.Text.Length; i++)
+            {
+                if (i>0 && i<=1)
+                {
+                    kulharf = kulharf + 10;
+                    label3.Text = kulharf.ToString();
+                }
+                if (i > 1 && i <= 2)
+                {
+                    kulharf = kulharf + 10;
+                    label3.Text = kulharf.ToString();
+                }
+                if (i > 2 && i <= 3)
+                {
+                    kulharf = kulharf + 10;
+                    label3.Text = kulharf.ToString();
+                }
+                if (i > 3 && i <=4)
+                {
+                    kulharf = kulharf + 10;
+                    label3.Text = kulharf.ToString();
+                }
+                if (i > 4 && i <=5 )
+                {
+                    kulharf = kulharf + 10;
+                    label3.Text = kulharf.ToString();
+                }
+                if (i > 5 && i <=6 )
+                {
+                    kulharf = kulharf + 10;
+                    label3.Text = kulharf.ToString();
+                }
+
+            }
+
+        }
+
+        int sayılar = 10;
+        private void İslemsoncuları_Click(object sender, EventArgs e)
+        {
+            int sayı = Convert.ToInt32(textBox3.Text);
+            if(textBox2.Text==textBox3.Text)
+            {
+                sayılar = sayılar + 50;
+                label6.Text = sayılar.ToString();
+              
+            }
+        
         }
     }
 }

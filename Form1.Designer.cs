@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.HARFGETİR = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.eşıtlık = new System.Windows.Forms.Button();
             this.SAYIGETİR = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -46,9 +48,18 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.HARFGETİR = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.islemsoncuları = new System.Windows.Forms.Button();
+            this.kelımesonucları = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +82,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BİRKELİME";
+            // 
+            // HARFGETİR
+            // 
+            this.HARFGETİR.Location = new System.Drawing.Point(307, 136);
+            this.HARFGETİR.Name = "HARFGETİR";
+            this.HARFGETİR.Size = new System.Drawing.Size(165, 27);
+            this.HARFGETİR.TabIndex = 9;
+            this.HARFGETİR.Text = "BİRHARF";
+            this.HARFGETİR.UseVisualStyleBackColor = true;
+            this.HARFGETİR.Click += new System.EventHandler(this.HARFGETİR_Click);
             // 
             // button15
             // 
@@ -139,7 +160,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.groupBox2.Controls.Add(this.button16);
+            this.groupBox2.Controls.Add(this.eşıtlık);
             this.groupBox2.Controls.Add(this.SAYIGETİR);
             this.groupBox2.Controls.Add(this.button8);
             this.groupBox2.Controls.Add(this.button9);
@@ -154,6 +175,15 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BİRİŞLEM";
+            // 
+            // eşıtlık
+            // 
+            this.eşıtlık.Location = new System.Drawing.Point(652, 83);
+            this.eşıtlık.Name = "eşıtlık";
+            this.eşıtlık.Size = new System.Drawing.Size(35, 20);
+            this.eşıtlık.TabIndex = 9;
+            this.eşıtlık.Text = "=";
+            this.eşıtlık.UseVisualStyleBackColor = true;
             // 
             // SAYIGETİR
             // 
@@ -221,41 +251,130 @@
             this.button14.TabIndex = 1;
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // HARFGETİR
-            // 
-            this.HARFGETİR.Location = new System.Drawing.Point(307, 136);
-            this.HARFGETİR.Name = "HARFGETİR";
-            this.HARFGETİR.Size = new System.Drawing.Size(165, 27);
-            this.HARFGETİR.TabIndex = 9;
-            this.HARFGETİR.Text = "BİRHARF";
-            this.HARFGETİR.UseVisualStyleBackColor = true;
-            this.HARFGETİR.Click += new System.EventHandler(this.HARFGETİR_Click);
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(652, 83);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(35, 20);
-            this.button16.TabIndex = 9;
-            this.button16.Text = "=";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(370, 205);
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button17.Location = new System.Drawing.Point(360, 218);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(60, 40);
             this.button17.TabIndex = 5;
             this.button17.Text = "YENİDEN BAŞLAT";
-            this.button17.UseVisualStyleBackColor = true;
+            this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.Button17_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(578, 219);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(490, 222);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "KELİMELER :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(701, 223);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "TOPLAM PUAN:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(803, 223);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "0";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(410, 215);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(10, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(93, 215);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 220);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "İŞLEMLER :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(214, 218);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "TOPLAM PUAN:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(307, 218);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "0";
+            // 
+            // islemsoncuları
+            // 
+            this.islemsoncuları.Location = new System.Drawing.Point(160, 242);
+            this.islemsoncuları.Name = "islemsoncuları";
+            this.islemsoncuları.Size = new System.Drawing.Size(75, 23);
+            this.islemsoncuları.TabIndex = 15;
+            this.islemsoncuları.Text = "işlemsonuc";
+            this.islemsoncuları.UseVisualStyleBackColor = true;
+            this.islemsoncuları.Click += new System.EventHandler(this.İslemsoncuları_Click);
+            // 
+            // kelımesonucları
+            // 
+            this.kelımesonucları.Location = new System.Drawing.Point(591, 245);
+            this.kelımesonucları.Name = "kelımesonucları";
+            this.kelımesonucları.Size = new System.Drawing.Size(75, 23);
+            this.kelımesonucları.TabIndex = 16;
+            this.kelımesonucları.Text = "kelimesonuc";
+            this.kelımesonucları.UseVisualStyleBackColor = true;
+            this.kelımesonucları.Click += new System.EventHandler(this.Kelımesonucları_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Red;
+            this.ClientSize = new System.Drawing.Size(921, 450);
+            this.Controls.Add(this.kelımesonucları);
+            this.Controls.Add(this.islemsoncuları);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -264,6 +383,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -288,8 +408,19 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button SAYIGETİR;
         private System.Windows.Forms.Button HARFGETİR;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button eşıtlık;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button islemsoncuları;
+        private System.Windows.Forms.Button kelımesonucları;
     }
 }
 
